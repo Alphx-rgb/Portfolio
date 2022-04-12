@@ -32,7 +32,7 @@ export const projects = [
       title: "More Projects",
       description:
         "Browse for More Projects",
-      image: "./project-3.gif",
+      image: "http://www.jamisonproject.org/images/OtherProjects.png",
       link: "",
     }
   ];
