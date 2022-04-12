@@ -32,7 +32,7 @@ export const projects = [
       title: "More Projects",
       description:
         "Browse for More Projects",
-      image: "./project-3.gif",
+      image: "https://images.screenish.com/wp-content/uploads/2016/06/22180251/project.jpg",
       link: "",
     }
   ];
