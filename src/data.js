@@ -5,9 +5,9 @@ export const projects = [
       title: "Discord Bot",
       subtitle: "MERN Stack",
       description:
-        "Discord Bot made using NodeJs and Discord API, I built it for my cyberlabs club",
-      image: "https://www.sie.com/tachyon/sites/15/2021/05/SIE-Blog_Featured-Image_Discord.jpg?resize=1088%2C612&crop_strategy=smart",
-      link: "https://github.com/Alphx-rgb/Discord-Bot",
+        "Discord Bot made using NodeJs and Discord API, I built it for my cyberlabs club.It assigns the users the role inexchange of flags",
+      github: "https://github.com/Alphx-rgb/Discord-Bot",
+      tags:["MERN", "Discord","API" ]
     },
     {
       id:2,
@@ -15,30 +15,34 @@ export const projects = [
       subtitle: "Python- GUI and CLI",
       description:
         "Reconnaissance Tool (CLI and GUI Tool) which automates the recon process on the given domain or URL and makes a report of its findings",
-      image: "http://www.codeproject.com/KB/IP/1087859/WebCrawlerImage.jpg",
-      link: "https://github.com/Alphx-rgb/Web-Crawler-GUI-Tool",
+      github: "https://github.com/Alphx-rgb/Web-Crawler-GUI-Tool",
+      live:"https://webcrawler7280.herokuapp.com/",
+      tags:[
+        "Python","Crawler","Django"
+      ]
     },
     {
       id:3,
-      title: "PortFolio Website",
-      subtitle: "ReactJs",
+      title: "WhatsApp Web Clone",
       description:
-        "My own website showcasing my works and skills",
-      image: "http://www.codeproject.com/KB/IP/1087859/WebCrawlerImage.jpg",
-      link: "https://jsbootcamp.com",
+        "A clone of Whatsapp web made using MERN Stack. It uses Google Authentication(sign in with Google)",
+      github:"https://github.com/Alphx-rgb/WhatsApp-Clone",
+      live: "https://lambent-rolypoly-341885.netlify.app/",
+      tags:["MERN","Socket.io","API"]
     },
     {
       id:4,
-      title: "More Projects",
+      title: "E-product Advisor",
       description:
-        "Browse for More Projects",
-      image:"https://images.screenish.com/wp-content/uploads/2016/06/22180251/project.jpg",
-      link: "",
-    }
+        "A GUI tool used to compare prices,ratings over differnt sites and give the best available choices for client. ",
+      github:"https://github.com/Alphx-rgb/Hackfest-2021",
+      live: "",
+      tags:["MERN","Socket.io","API"]
+    },
   ];
 
 export const skills =[
-  "Data Structures and Algorithms","Bash","C++","Python","HTML | CSS | SCSS","JAVASCRIPT","ReactJS","NodeJS | ExpressJS | Socket.io"
+  "Data Structures and Algorithms","Bash","C++","Python","HTML | CSS | SCSS","JAVASCRIPT","ReactJS","NodeJS | ExpressJS | Socket.io","Django Framework","Basic pentesting"
 ]
 
 

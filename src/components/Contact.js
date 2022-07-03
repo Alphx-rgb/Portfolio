@@ -1,11 +1,21 @@
 
-import React from "react";
-
+import React, { useState } from "react";
+import "./contact.css";
+function AlertComponent(props){
+  return(
+  <div className="bg-indigo-900 text-center py-4 lg:px-4">
+  <div className="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+    <span className="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
+    <span className="font-semibold mr-2 text-left flex-auto">Get Your Website Ready at the best Price</span>
+    {/* <svg className="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg> */}
+  </div>
+</div>
+  )
+}
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
-
   function encode(data) {
     return Object.keys(data)
       .map(
@@ -21,7 +31,9 @@ export default function Contact() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
-    }).then(()=>alert("Message Sent!"))
+    }).then(()=>
+    e.target[3].innerText="Sent!"
+    )
       .catch((error)=>alert(error))
   }
 
@@ -73,8 +85,7 @@ export default function Contact() {
             Hire Me
           </h2>
           <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+           I would be more than happy to connect with you!
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -120,6 +131,7 @@ export default function Contact() {
           </button>
         </form>
       </div>
+      <AlertComponent /> 
     </section>
   );
 }

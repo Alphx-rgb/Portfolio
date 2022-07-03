@@ -1,0 +1,14 @@
+.project_container{
+    display:flex;
+    direction:row;
+    flex-wrap:wrap ;
+    flex: 1 1 auto;
+    text-align: center;
+    justify-content: center;
+}
+.project_container > *{
+    margin:1%;
+}
+.project_cont{
+    border:6px solid aquamarine;
+}
