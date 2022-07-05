@@ -1,4 +1,3 @@
-
 export const projects = [
     {
       id:1,
@@ -53,4 +52,4 @@ export const testimonials = [
     image:"abc",
     company:"DifferHome"
   }
-]
+];
